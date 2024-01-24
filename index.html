@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello <span id="texttochange">VRIT</span></h1>
+    <button id="mybtn">Click here to change the text</button>
+    <h2 style="color: red">WELCOME TO THE CLASS</h2>
+    <a href="http://google.com">
+      <button>Go to google</button>
+    </a>
+
+    <script>
+      function changeText() {
+        var text = document.getElementById("texttochange");
+        text.textContent = "I changed text";
+      }
+
+      setTimeout(changeText, 5000);
+    </script>
+  </body>
+</html>
